@@ -11,21 +11,21 @@ First, I created a star schema optimized for queries on song play analysis. This
 **Fact Table**
 
 songplays - records in log data associated with song plays i.e. records with page NextSong <br>
-   * songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
+(songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent)
 
 **Dimension Tables**
 
 users - users in the app <br>
-   * user_id, first_name, last_name, gender, level
+(user_id, first_name, last_name, gender, level)
 
 songs - songs in music database <br>
-   * song_id, title, artist_id, year, duration
+(song_id, title, artist_id, year, duration)
 
 artists - artists in music database <br>
-   * artist_id, name, location, latitude, longitude
+(artist_id, name, location, latitude, longitude)
 
 time - timestamps of records in songplays broken down into specific units <br>
-   * start_time, hour, day, week, month, year, weekday
+(start_time, hour, day, week, month, year, weekday)
 
 
 **In addition to the data files, the project workspace includes five files:**
