@@ -10,7 +10,7 @@ time_table_drop = "DROP table if exists time;"
 
 songplays_table_create = ("""
     CREATE TABLE IF NOT EXISTS songlays (songplay_id serial PRIMARY KEY, 
-                                        start_time timestamp, 
+                                        start_time bigint, 
                                         user_id int, 
                                         level varchar, 
                                         song_id varchar, 
@@ -45,7 +45,7 @@ artist_table_create = ("""
                         """)
 
 time_table_create = ("""
-    CREATE TABLE IF NOT EXISTS time (start_time timestamp PRIMARY KEY, 
+    CREATE TABLE IF NOT EXISTS time (start_time bigint PRIMARY KEY, 
                                     hour int, 
                                     day int, 
                                     week int, 
