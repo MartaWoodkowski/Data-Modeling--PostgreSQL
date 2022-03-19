@@ -21,7 +21,7 @@ songplays_table_create = ("""
                         """)
 
 user_table_create = ("""
-    CREATE TABLE IF NOT EXISTS users (user_id int NOT NULL PRIMARY KEY, 
+    CREATE TABLE IF NOT EXISTS users (user_id int PRIMARY KEY, 
                                     first_name varchar, 
                                     last_name varchar, 
                                     gender varchar, 
@@ -29,7 +29,7 @@ user_table_create = ("""
                     """)
 
 song_table_create = ("""
-    CREATE TABLE IF NOT EXISTS songs (song_id varchar NOT NULL PRIMARY KEY, 
+    CREATE TABLE IF NOT EXISTS songs (song_id varchar PRIMARY KEY, 
                                     title varchar, 
                                     artist_id varchar NOT NULL, 
                                     year int, 
@@ -37,7 +37,7 @@ song_table_create = ("""
                     """)
 
 artist_table_create = ("""
-    CREATE TABLE IF NOT EXISTS artists (artist_id varchar NOT NULL PRIMARY KEY, 
+    CREATE TABLE IF NOT EXISTS artists (artist_id varchar PRIMARY KEY, 
                                         name varchar, 
                                         location varchar, 
                                         latitude numeric, 
@@ -45,7 +45,7 @@ artist_table_create = ("""
                         """)
 
 time_table_create = ("""
-    CREATE TABLE IF NOT EXISTS time (start_time bigint NOT NULL PRIMARY KEY, 
+    CREATE TABLE IF NOT EXISTS time (start_time bigint PRIMARY KEY, 
                                     hour int, 
                                     day int, 
                                     week int, 
